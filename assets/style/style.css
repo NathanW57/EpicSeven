@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto.ttf)
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body{
+    background-color:rgba(32, 19, 5, 0.900);
+}
+#Synopsis{
+    /* Placements des containers */
+    font-size: 1.5em;
+    margin-top: 0.03cm;
+    margin-left: 5em;
+    margin-right: 5em;
+    border: 3px solid black;
+}
+#Synopsis1{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0;
+    margin-left: 3.2cm;
+    margin-right: 3.2cm;
+    border: 3px solid black;
+
+}
+#descriptif{
+    font-size: 1.5em;
+    margin-top: 0.03cm;
+    margin-left: 5em;
+    margin-right: 5em;
+    border: 3px solid black;
+
+}
+#DescriEpic{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0;
+    margin-left: 3.2cm;
+    margin-right: 3.2cm;
+    border: 3px solid black;
+}
+.titre{
+    /* Titre des pages */
+    text-align: center;
+    font-size: 4em;
+    color:gray;
+    font-family: Roboto;
+}
+/* Positionnement au centre des options d'accueil  */
+.positions{
+    font-family: arial;
+    font-size: 24px;
+    /* Center child horizontally*/
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+/* Faire des espaces entre les options */
+#Perso{
+    margin-right: 1cm;
+    text-decoration: none;
+    color: white;
+}
+#Perso:hover{
+    border-bottom: solid 2px;
+    color: black;
+}
+#Arte{
+    margin-right: 1cm;
+    text-decoration: none;
+    color: white;
+}
+#Arte:hover{
+    border-bottom: solid 2px;
+    color: black;
+}
+#tierList{
+    margin-right: 1cm;
+    text-decoration: none;
+    color: white;
+}
+#tierList:hover{
+    border-bottom: solid 2px;
+    color: black;
+}
+#Index{
+    margin-right: 1cm;
+    text-decoration: none;
+    color: white;
+}
+#Nocolor{
+    text-decoration: none;
+    color: black;
+}
+
+#Nocolor:visited{
+    color: rgb(176, 22, 22);
+}
+
+/* Ajouter une bannière dans le haut de la page et faire une redirection avec sur la page d'acceuil */
+#index{
+    width: 100%;
+    height: 30vh;
+    background-image: url(../images/epicbanner.jpg);
+    background-size:cover;
+    background-position: center;
+    box-shadow: 3px 3px 3px grey;
+}
+/* Gérer la taille de la bannière */
+header{
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Placer les personnages dans une boite centrer dans la page perso */
+#Class{
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px black;
+    margin: 6em 8em;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    animation-name: RightToTheLeft;
+    animation-duration: 1s;
+}
+@keyframes RightToTheLeft {
+    0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+}
+/* Changer la police des personnages , dans la page perso */
+.fontAvatar{
+    font-size: 1.2em;
+}
+/* Faire mon gros container */
+section{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+/* Mettre le container de droite en colonne */
+#DescriP{
+    display: flex;
+    flex-direction:column
+}
+section span{
+    border: 1px solid black;
+    border-radius: 10px/9px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+/* Mettre les skills en colonne */
+.containerSkill{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+.imageSkill{
+    background-color: black;
+}
+/* Dimension des sorts */
+.dimensionSkill{
+    width: 9em;
+    height: 8em;
+
+}
+#noBorder{
+    border: none;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+#imageSkill{
+    border: none;
+}
+.redColorSkill{
+    color: rgb(125, 5, 5);
+}
+.margeTable{
+    font-size: 1.2em;
+    display: flex;
+    width: 100%;
+    border: solid 1px black;
+}
+/* j'espace les stats */
+.margeTable td,tr{
+    display: flex;
+    width: 100%;
+    margin-right: 1.5em;
+    justify-content:space-evenly;
+}
+
+#paddingLeft{
+    width: 100%;
+    margin-left: 8em;
+}
+#statsPlace{
+    display: flex;
+    flex-direction: row;
+}
+
+#containerStats{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+/* j'espace les stats */
+#marginStats{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+/* Je met la valeur de 100 with au container skill1 */
+#width100{
+    width: 100%;
+}
+.SamePosition{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+.bold{
+    font-weight: bold;
+}
+.fontWeight{
+    font-weight: bold;
+}
+.descriptionAlign{
+    width: 600px;
+}
+.descriptionAlignTwo{
+    width: 800px;
+}
+
+
+.container{
+    margin: auto;
+}
+.card{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+    margin-bottom: 30px;
+}
+
+.frontOfCard, .backOfCard{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frontOfCard{
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.backOfCard{
+    z-index: 1;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.card.is-flipped{
+    transform: rotateY(180deg);
+}
+.dimensionImage{
+    width: 400px;
+    height: 400px;
+}
+#containerArtefact{
+    display: flex;
+    gap: 20px;
+}
